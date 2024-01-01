@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { shell } from 'electron'
 </script>
 
 <template>
@@ -11,9 +10,6 @@ import { shell } from 'electron'
       </div>
       <span select-none class="text-gradient ">Polyglot</span>
     </h3>
-    <div class="center-y" @click="shell.openExternal('https://github.com/liou666')">
-      <i w-6 h-6 icon-btn i-carbon:logo-github />
-    </div>
   </header>
 </template>
 

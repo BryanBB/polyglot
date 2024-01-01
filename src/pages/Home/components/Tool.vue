@@ -47,10 +47,7 @@ watch([azureKey, azureRegion, ttsPassword], () => {
       <i icon-btn i-ic:baseline-person-add-alt />
       <span>New Chat</span>
     </div>
-    <div
-      nav-item @click=" ipcRenderer.send('open-settings-window')
-      "
-    >
+    <div nav-item >
       <i icon-btn i-carbon:settings />
       <span>Setting</span>
     </div>

@@ -325,7 +325,7 @@ async function grammarAnalysis(text: string, i: number) {
             <p v-else justify-end mt-2 flex>
               <template v-if="item.audioBlob">
                 <template v-if="speakIndex !== i">
-                  <span class="chat-btn mr-1" @click="speakByUser(item.audioBlob, i)">
+                  <span class="chat-btn mr-1" @click="speakByUser(item.audioBlob ?? '', i)">
                     <i icon-btn rotate-270 i-ic:sharp-wifi />
                   </span>
                 </template>
@@ -333,7 +333,7 @@ async function grammarAnalysis(text: string, i: number) {
                   <span v-if="isPlaying" class="chat-btn mr-1" @click="stopUserSpeaker()">
                     <i icon-btn rotate-270 i-svg-spinners:wifi-fade />
                   </span>
-                  <span v-else class="chat-btn mr-1" @click="speakByUser(item.audioBlob, i)">
+                  <span v-else class="chat-btn mr-1" @click="speakByUser(item.audioBlob ?? '', i)">
                     <i icon-btn rotate-270 i-ic:sharp-wifi />
                   </span>
                 </template>

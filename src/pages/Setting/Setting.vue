@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import OpenSetting from './components/OpenSetting.vue'
 import TTSSetting from './components/TTSSetting.vue'
-import About from './components/About.vue'
 
 useDark()
 useTitle('设置界面')
@@ -14,12 +13,8 @@ const settings = [{
   icon: 'i-ic:outline-deblur',
   label: '语音',
   component: TTSSetting,
-},
-{
-  icon: 'i-ic:round-emoji-people',
-  label: '关于',
-  component: About,
-}]
+}
+]
 
 const currentSettingIndex = ref(0)
 </script>
